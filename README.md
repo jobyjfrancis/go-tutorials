@@ -1,2 +1,3 @@
 # go-tutorials
-https://go.dev/doc/tutorial
+
+This repository would contain the practice code for tutorials under https://go.dev/doc/tutorial
