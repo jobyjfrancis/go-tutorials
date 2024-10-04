@@ -1,8 +1,14 @@
 package greetings
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
-func Hello(name string) string {
-	message := fmt.Sprintf("Hello, %v Welcome!!!", name)
-	return message
+func Hello(name string) (string, error) {
+	if name == "" {
+		return "", errors.New("empty name")
+	}
+	message := fmt.Sprintf("Hello, %s Welcome to Golang!!!", name)
+	return message, nil
 }
